@@ -32,7 +32,7 @@ var server = http.createServer(function(request, response){
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="/h">
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
     <div class="rubiksCube">
@@ -95,7 +95,7 @@ var server = http.createServer(function(request, response){
     </html>
     `)
     response.end()
-  } else if(path === '/h'){
+  } else if(path === '/style.css'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
     response.write(`
